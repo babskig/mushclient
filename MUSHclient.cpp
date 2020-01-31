@@ -42,7 +42,11 @@ COLORREF xterm_256_colours [256];
 #ifdef LUA_52
   #pragma comment( lib, "lua52.lib" )
 #else
-  #pragma comment( lib, "lua5.1.lib" )
+  #ifdef _WIN64
+    #pragma comment( lib, "lib\\x64\\lua5.1.lib" )
+  #else
+	#pragma comment( lib, "lib\\x86\\lua5.1.lib" )
+  #endif
 #endif
 
 // library needed for timers

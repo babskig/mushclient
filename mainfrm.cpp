@@ -816,7 +816,7 @@ void CMainFrame::ProcessTimers (void)
   }  // end of CMainFrame::ProcessTimers
 
 // timers are pretty unreliable, so we'll just use them as a hint now to check the timer times
-void CMainFrame::OnTimer(UINT nIDEvent) 
+void CMainFrame::OnTimer(UINT_PTR nIDEvent)
   {
 
   CheckTimerFallback ();

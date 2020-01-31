@@ -11,8 +11,6 @@
 
 #include "tLuaDispatch.h"
 
-typedef ULONG ULONG_PTR;
-
 class tLuaControl: public tLuaDispatch, public IOleObject,
         public IOleControl,	public IOleInPlaceObject,
         public IOleInPlaceActiveObject, public IViewObject2,
